@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.9.1)
+  - ContentLoader (1.1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.9.1)
+  - ContentLoader
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ContentLoader
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  ContentLoader: b14db4449065be0fd2b8c77b65ff5e4a0a8c7f86
+
+PODFILE CHECKSUM: e23a9d9caadc4a48ae7684558d7de5b43b3405c3
+
+COCOAPODS: 1.11.3

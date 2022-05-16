@@ -13,6 +13,10 @@
 		18B2BCAA28327A9D00C5A3C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B2BCA828327A9D00C5A3C1 /* Main.storyboard */; };
 		18B2BCAC28327AA900C5A3C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B2BCAB28327AA900C5A3C1 /* Assets.xcassets */; };
 		18B2BCAF28327AA900C5A3C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B2BCAD28327AA900C5A3C1 /* LaunchScreen.storyboard */; };
+		18B2BCC028327B7E00C5A3C1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2BCBF28327B7E00C5A3C1 /* Constants.swift */; };
+		18B2BCC428327BB600C5A3C1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2BCC328327BB600C5A3C1 /* DataModel.swift */; };
+		18B2BCC728327BEC00C5A3C1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2BCC628327BEC00C5A3C1 /* CustomCell.swift */; };
+		4F1E1F0BD41D048E1F813C08 /* Pods_SimpleSwiftMVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F79CDECCB1F371D271389E /* Pods_SimpleSwiftMVC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,12 @@
 		18B2BCAB28327AA900C5A3C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18B2BCAE28327AA900C5A3C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18B2BCB028327AA900C5A3C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B2BCBF28327B7E00C5A3C1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		18B2BCC328327BB600C5A3C1 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		18B2BCC628327BEC00C5A3C1 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		5F8FE7E1BA36AE008C4EEF25 /* Pods-SimpleSwiftMVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSwiftMVC.release.xcconfig"; path = "Target Support Files/Pods-SimpleSwiftMVC/Pods-SimpleSwiftMVC.release.xcconfig"; sourceTree = "<group>"; };
+		766917213A7D2B8C947801F8 /* Pods-SimpleSwiftMVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSwiftMVC.debug.xcconfig"; path = "Target Support Files/Pods-SimpleSwiftMVC/Pods-SimpleSwiftMVC.debug.xcconfig"; sourceTree = "<group>"; };
+		F4F79CDECCB1F371D271389E /* Pods_SimpleSwiftMVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleSwiftMVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F1E1F0BD41D048E1F813C08 /* Pods_SimpleSwiftMVC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06FD1B733DF86F14D939D8A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4F79CDECCB1F371D271389E /* Pods_SimpleSwiftMVC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		18B2BC9628327A9D00C5A3C1 = {
 			isa = PBXGroup;
 			children = (
 				18B2BCA128327A9D00C5A3C1 /* SimpleSwiftMVC */,
 				18B2BCA028327A9D00C5A3C1 /* Products */,
+				DD9A90458D726A0CA951AF4A /* Pods */,
+				06FD1B733DF86F14D939D8A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +77,76 @@
 		18B2BCA128327A9D00C5A3C1 /* SimpleSwiftMVC */ = {
 			isa = PBXGroup;
 			children = (
-				18B2BCA228327A9D00C5A3C1 /* AppDelegate.swift */,
-				18B2BCA428327A9D00C5A3C1 /* SceneDelegate.swift */,
-				18B2BCA628327A9D00C5A3C1 /* ViewController.swift */,
-				18B2BCA828327A9D00C5A3C1 /* Main.storyboard */,
-				18B2BCAB28327AA900C5A3C1 /* Assets.xcassets */,
-				18B2BCAD28327AA900C5A3C1 /* LaunchScreen.storyboard */,
-				18B2BCB028327AA900C5A3C1 /* Info.plist */,
+				18B2BCBE28327B6C00C5A3C1 /* Utility */,
+				18B2BCBC28327B2200C5A3C1 /* Controller */,
+				18B2BCBB28327B1A00C5A3C1 /* View */,
+				18B2BCBA28327B1200C5A3C1 /* Model */,
+				18B2BCB828327ACE00C5A3C1 /* SupportFiles */,
+				18B2BCB728327AB100C5A3C1 /* Resources */,
 			);
 			path = SimpleSwiftMVC;
+			sourceTree = "<group>";
+		};
+		18B2BCB728327AB100C5A3C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18B2BCA828327A9D00C5A3C1 /* Main.storyboard */,
+				18B2BCAD28327AA900C5A3C1 /* LaunchScreen.storyboard */,
+				18B2BCAB28327AA900C5A3C1 /* Assets.xcassets */,
+				18B2BCA428327A9D00C5A3C1 /* SceneDelegate.swift */,
+				18B2BCA228327A9D00C5A3C1 /* AppDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18B2BCB828327ACE00C5A3C1 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				18B2BCB028327AA900C5A3C1 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		18B2BCBA28327B1200C5A3C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18B2BCC328327BB600C5A3C1 /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18B2BCBB28327B1A00C5A3C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18B2BCC628327BEC00C5A3C1 /* CustomCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18B2BCBC28327B2200C5A3C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18B2BCA628327A9D00C5A3C1 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18B2BCBE28327B6C00C5A3C1 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				18B2BCBF28327B7E00C5A3C1 /* Constants.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		DD9A90458D726A0CA951AF4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				766917213A7D2B8C947801F8 /* Pods-SimpleSwiftMVC.debug.xcconfig */,
+				5F8FE7E1BA36AE008C4EEF25 /* Pods-SimpleSwiftMVC.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18B2BCB328327AA900C5A3C1 /* Build configuration list for PBXNativeTarget "SimpleSwiftMVC" */;
 			buildPhases = (
+				1548F8EC924DC63971C26BE6 /* [CP] Check Pods Manifest.lock */,
 				18B2BC9B28327A9D00C5A3C1 /* Sources */,
 				18B2BC9C28327A9D00C5A3C1 /* Frameworks */,
 				18B2BC9D28327A9D00C5A3C1 /* Resources */,
+				C1CD281B939044DFFEEEEB2E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +216,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1548F8EC924DC63971C26BE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleSwiftMVC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1CD281B939044DFFEEEEB2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleSwiftMVC/Pods-SimpleSwiftMVC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleSwiftMVC/Pods-SimpleSwiftMVC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleSwiftMVC/Pods-SimpleSwiftMVC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18B2BC9B28327A9D00C5A3C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B2BCC428327BB600C5A3C1 /* DataModel.swift in Sources */,
 				18B2BCA728327A9D00C5A3C1 /* ViewController.swift in Sources */,
 				18B2BCA328327A9D00C5A3C1 /* AppDelegate.swift in Sources */,
 				18B2BCA528327A9D00C5A3C1 /* SceneDelegate.swift in Sources */,
+				18B2BCC728327BEC00C5A3C1 /* CustomCell.swift in Sources */,
+				18B2BCC028327B7E00C5A3C1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,11 +412,12 @@
 		};
 		18B2BCB428327AA900C5A3C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 766917213A7D2B8C947801F8 /* Pods-SimpleSwiftMVC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SimpleSwiftMVC/Info.plist;
+				INFOPLIST_FILE = SimpleSwiftMVC/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,11 +431,12 @@
 		};
 		18B2BCB528327AA900C5A3C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F8FE7E1BA36AE008C4EEF25 /* Pods-SimpleSwiftMVC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SimpleSwiftMVC/Info.plist;
+				INFOPLIST_FILE = SimpleSwiftMVC/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
